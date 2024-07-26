@@ -22,7 +22,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 100px 1fr calc(var(--w-image) * var(--calculate));
+    grid-template-columns: 80px 1fr calc(var(--w-image) * var(--calculate));
     grid-template-rows: 80px;
     position: relative;
     z-index: 10;
@@ -124,7 +124,7 @@ header nav {
 .carousel .list .item .image img {
     width: 100%;
     margin-bottom: 20px;
-    filter: drop-shadow(0 150px 50px #9e0c0c55);
+    filter: drop-shadow(0 0 0.75rem black);
 }
 
 .carousel .list .item .image figcaption {
@@ -143,6 +143,7 @@ header nav {
 }
 .carousel .list .item .main-content .content {
     padding: 150px 20px 20px 80px;
+    color: #fff;
 }
 
 .carousel .list .item .main-content .content h2 {
@@ -217,7 +218,7 @@ header nav {
 }
 
 .carousel .list .item.active .main-content {
-    animation: showContent 1s ease-in-out 1 forwards;
+    animation: showContent 1.5s ease-in-out 1 forwards;
 }
 
 @keyframes showContent {
@@ -228,7 +229,13 @@ header nav {
     }
 }
 
-.next .item .image img,
+.next .item.other_1 {
+    z-index: 1;
+}
+
+.next .item .image img {
+    animation: effectNext 0.8s ease-in-out 1 forwards;
+}
 .next .item .image figcaption {
     animation: effectNext 0.5s ease-in-out 1 forwards;
 }
@@ -242,7 +249,7 @@ header nav {
 }
 
 .next .item.active .image {
-    --transform-from: var(var(--w-image))
+    --transform-from: var(--w-image);
 }
 
 .next .item.other_1 .image {
@@ -253,11 +260,42 @@ header nav {
 
 .next .item.other_2 .image {
     z-index: 3;
-    --transform-from: calc(var(--w-image) * 2);
+    --transform-from: calc(var(--w-image)) * 2;
 }
 
 .arrows {
     z-index: 10;
 }
+
+/* prev */
+.prev .list .item .image img {
+    animation: effectPrev 0.8s ease-in-out 1 forwards;
+}
+.prev .list .item .image figcaption {
+    animation: effectPrev 0.5s ease-in-out 1 forwards;
+}
+@keyframes effectPrev {
+    from{
+        transform: translateX(calc(var(--transform-from)));
+    }to{
+        transform: translateX(calc(var(--transform-from) + var(--w-image)));
+    }
+}
+
+.prev .list .item.active .image {
+    --transform-from: calc(var(--w-image) * -1);
+    overflow: hidden;
+}
+
+.prev .list .item.other_1 .image {
+    --transform-from: 0px;
+    z-index: 3;
+}
+
+.prev .list .item.other_2 .image {
+    --transform-from: var(--w-image);
+    z-index: 3;
+}
+
 
 

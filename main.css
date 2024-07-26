@@ -215,7 +215,7 @@ header nav {
 }
 
 .carousel .list .item.active .main-content {
-    animation: showContent 1.8s ease-in-out 1 forwards;
+    animation: showContent 1.5s ease-in-out 1 forwards;
 }
 
 @keyframes showContent {
@@ -277,6 +277,10 @@ header nav {
     }to{
         transform: translateX(calc(var(--transform-from) + var(--w-image)));
     }
+}
+
+.prev .item.other_2 {
+    z-index: 1;
 }
 
 .prev .list .item.active .image {

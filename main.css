@@ -89,7 +89,7 @@ header nav {
     top: 50px;
     left: 50px;
     content: '';
-    background-color: red;
+    background-color: ;
     width: 400px;
     height: 300px;
     z-index: 10;
@@ -100,6 +100,7 @@ header nav {
 }
 
 .carousel .list .item {
+    display:block;
     position: absolute;
     top: 0;
     left: 0;
@@ -147,7 +148,7 @@ header nav {
 }
 
 .carousel .list .item .main-content .content h2 {
-    font-size: 4em;
+    font-size: 3.5em;
     font-family: "Edu AU VIC WA NT Hand", cursive;
 }
 
@@ -191,15 +192,11 @@ header nav {
     box-sizing: 0 10px 40px #5555;
     cursor: pointer;
     transition: 0.5s;
-    border-radius: 12px;
+    border-radius: 50px;
 }
 
 .arrows button:hover {
     background-color: #46220f;
-}
-
-.carousel .list .item {
-    display: none;
 }
 
 .carousel .list .item.active,
@@ -213,12 +210,12 @@ header nav {
 }
 
 .carousel .list .item.item.other_1,
-.carousel .list .item.item.other_2{
+.carousel .list .item.item.other_2 {
     pointer-events: none;
 }
 
 .carousel .list .item.active .main-content {
-    animation: showContent 1.5s ease-in-out 1 forwards;
+    animation: showContent 1.8s ease-in-out 1 forwards;
 }
 
 @keyframes showContent {
@@ -248,19 +245,19 @@ header nav {
     }
 }
 
-.next .item.active .image {
-    --transform-from: var(--w-image);
+.next .list .item.active .image {
+    --transform-from: var(--w-image);   
 }
 
-.next .item.other_1 .image {
+.next .list .item.other_1 .image {
     z-index: 3;
     --transform-from: 0px;
     overflow: hidden;
 }
 
-.next .item.other_2 .image {
+.next .list .item.other_2 .image {
     z-index: 3;
-    --transform-from: calc(var(--w-image)) * 2;
+    --transform-from: calc(var(--w-image) * 2);
 }
 
 .arrows {

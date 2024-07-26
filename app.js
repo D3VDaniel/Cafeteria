@@ -9,8 +9,8 @@ let other_2 = null;
 next.onclick = () => {
     carousel.classList.remove('prev');
     carousel.classList.add('next');
-    active = active + 1 >= countItem ? 0 : active + 1;
-    other_1 = active - 1 < 0 ? countItem -1 : active -1;
+    active =active + 1 >= countItem ? 0 : active + 1;
+    other_1 =active - 1 < 0 ? countItem -1 : active - 1;
     other_2 = active + 1 >= countItem ? 0 : active + 1;
     changeSlider();
 }
@@ -22,7 +22,6 @@ prev.onclick = () => {
     other_2 = other_1 + 1 >= countItem ? 0 : other_1 + 1;
     changeSlider();
 }
-
 const changeSlider = () => {
     let itemOldActive = document.querySelector('.carousel .item.active');
     if(itemOldActive) itemOldActive.classList.remove('active');

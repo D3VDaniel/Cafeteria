@@ -10,7 +10,7 @@ body {
     font-family: "Edu AU VIC WA NT Hand", cursive;
     margin: 0;
     font-size: 16px;
-    background-color: #46220f;
+    background-color: 46220f;
     text-decoration: none;
 }
 
@@ -22,15 +22,16 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 80px 1fr calc(var(--w-image) * var(--calculate));
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 80px;
     position: relative;
     z-index: 10;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid black;
+    background-color: #fff;
 }
 
 header .logo img {
-    width: 80%;
+    width: ;
 }
 
 header .logo {
@@ -47,10 +48,15 @@ header nav a {
     font-size: 1.5em;
 }
 
+header nav a:hover {
+    cursor: pointer;
+    font-size: 1.6em;
+}
+
 header nav ul {
     height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
     align-items: center;
     gap: 30px;
     padding-right: 30px;
@@ -144,12 +150,25 @@ header nav {
 }
 .carousel .list .item .main-content .content {
     padding: 150px 20px 20px 80px;
-    color: #fff;
+}
+
+.image figcaption {
+    color: #000;
 }
 
 .carousel .list .item .main-content .content h2 {
     font-size: 3.5em;
     font-family: "Edu AU VIC WA NT Hand", cursive;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+
+.carousel .list .item .main-content .content p {
+    filter: drop-shadow(0 0 0.75rem white);
+}
+
+.card {
+    border-radius: 0;
+    border: none;
 }
 
 .carousel .list .item .main-content .content .price {
@@ -168,12 +187,18 @@ header nav {
     border-radius: 30px;
     border: none;
     margin-top: 20px;
+    width: 30%;
+}
+
+.carousel .list .item .main-content .content .addToCard:hover {
+    background-color: #254c36;
+    zoom: 101%;
 }
 
 .arrows {
     position: absolute;
     bottom: 20px;
-    width: calc(100% - calc(var(--w-image) * var(--calculate)));
+    width: calc(99% - calc(var(--w-image) * var(--calculate)));
     display: grid;
     grid-template-columns: repeat(2, 50px);
     grid-template-rows: 50px;
@@ -182,7 +207,7 @@ header nav {
 }
 
 .arrows button {
-    background-color: transparent;
+    background-color: #46220f;
     border: 1px solid var(--border-color);
     color: #fff;
     font-family: monospace;
@@ -196,7 +221,8 @@ header nav {
 }
 
 .arrows button:hover {
-    background-color: #46220f;
+    background-color: transparent;
+    color: #46220f;
 }
 
 .carousel .list .item.active,
@@ -226,6 +252,7 @@ header nav {
     }
 }
 
+/* NEXT EFFECT */
 .next .item.other_1 {
     z-index: 1;
 }
@@ -264,7 +291,7 @@ header nav {
     z-index: 10;
 }
 
-/* prev */
+/* PREV EFFECT */
 .prev .list .item .image img {
     animation: effectPrev 0.8s ease-in-out 1 forwards;
 }
@@ -281,6 +308,7 @@ header nav {
 
 .prev .item.other_2 {
     z-index: 1;
+    opacity: 100;
 }
 
 .prev .list .item.active .image {
@@ -296,6 +324,77 @@ header nav {
 .prev .list .item.other_2 .image {
     --transform-from: var(--w-image);
     z-index: 3;
+    opacity: 0;
+}
+
+/* INTRODUÇÃO DE PRODUTO */
+
+.container {
+    background-color: ;
+}
+
+.coluna2 {
+    border-right: 1px solid black;
+}
+
+.coluna1 img {
+    height: 500px;
+}
+
+.text-colored {
+    color: #c57d56;
+}
+
+.saiba-mais {
+    background-color: #4f8b69;
+    color: #fff;
+    padding: 10px 30px;
+    font-family: Poppins;
+    font-size: large;
+    font-weight: 400;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+}
+
+.saiba-mais:hover {
+    background-color: #254c36;
+    zoom: 101%;
+    color: #fff;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1023px) {
+    :root{
+        --calculate: 1;
+        --w-image: 400px;
+    }
+
+    .carousel .list .item .main-content .content h2 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .carousel .list .item .image {
+        width: 100%;
+        left: 0;
+        justify-content: center;
+    }
+    .carousel .list .item .image figcaption {
+        color: #fff;
+        width: 100%;
+        text-align: center;
+    }
+    .carousel .list .item .main-content .content {
+        display: none;
+    }
+    .arrows {
+        left: 50%;
+        justify-content: center;
+    }
 }
 
 

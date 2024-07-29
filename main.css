@@ -334,9 +334,11 @@ header nav {
 }
 .coluna2 li img {
     padding: 10px 0;
+
 }
 .coluna1 img {
     height: 500px;
+    border-radius: 12px;
 }
 .text-colored {
     color: #c57d56;
@@ -360,7 +362,6 @@ header nav {
 }
 
 /* CARDÁPIO */
-
 #cardapio {
     background-image: url("./img mid/Fruit-bev-slideshow-NEWER-Shutterstock-forCMS.jpg");
     background-repeat: no-repeat;
@@ -369,33 +370,29 @@ header nav {
     height: 100vh;
     width: 100vw;
 }
-
 .menu-mid {
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    margin-right: 10%;
 }
-
 .menu-mid .container {
     justify-content: end;
 }
-
 .container-mid {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     height: 100vh;
     width: 100vw;
     padding: 10px 0;
 }
-
 .container-mid img {
     width: 100%;
     height: 100%;
     object-fit: fill;
     border-radius: 12px;
 }
-
 .card-img-overlay {
     background-color: ;
     width: 100%;
@@ -403,18 +400,42 @@ header nav {
     object-fit: cover;
     border-radius: 12px;
 }
-
 .card-img-overlay:hover {
     background-color: rgba(0, 0, 0, 0.6);
 }
-
 .menu-mid .card {
     background-color: red;
-    width: 70vw;
-    height: 600px;
+    width: 40vw;
+    height: 500px;
     padding: 0;
     border-radius: 12px;
 }
+
+/* CARROSEL */
+.container {
+    background-color: red;
+    width: 100vw;
+    height: 80vh;
+}
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+.carousel-item .carousel-img {
+    object-fit: cover;
+}
+.col-lg-6 img {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+.carousel-item .carousel-caption {
+    width: 100%;
+    height: 100%;
+}
+
 
 /* RESPONSIVIDADE */
 

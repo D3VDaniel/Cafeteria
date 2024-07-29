@@ -120,8 +120,8 @@
     <section class="onwhite pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <div class="coluna1 col-md-6">
-                    <img src="./img mid/iced-caramel-latte-with-whipped-cream-sweet-treat_157027-4684.avif"  class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                <div class="coluna1 col-lg-6 col-md-6">
+                    <img src="./img mid/iced-caramel-latte-with-whipped-cream-sweet-treat_157027-4684.avif"  class="d-block w-100" alt="Foto do espaço interno do restaurante">
                 </div>
                 <div class="coluna2 col-md-5 mt-3 mt-md-0">
                     <h2 class="section-title">Frappuccino Creme de <span class="text-colored">Caramelo</span></h2>
@@ -161,9 +161,44 @@
             </div>
         </div>
     </section>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <div class="col-lg-6 col-md-6 carousel-img">
+                        <img class="d-block" src="img carousel/2-cafe-gelado.jpg" alt="Bali">
+                    </div>
+                    <div class="col-lg-6 col-md-6 carousel-caption">
+                        <h2>BALI</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <div class="col-lg-6 col-md-6 carousel-img">
+                        <img class="d-block" src="./img carousel/arranjo-com-cafe.jpg" alt="Paris">
+                    </div>
+                    <div class="col-lg-6 col-md-6 carousel-caption">
+                        <h2>PARIS</h2>
+                    </div>
+                </div>
+                
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="5"></button>
+                </div>
+            </div>
+    </div>
 
-
-
+    <script src="./bootstrap.bundle.min.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>

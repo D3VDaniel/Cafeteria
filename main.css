@@ -414,27 +414,28 @@ header nav {
 /* CARROSEL */
 .container {
     background-color: red;
-    width: 100vw;
-    height: 80vh;
 }
 .carousel-item {
-    width: 100%;
-    height: 100%;
-}
-.carousel-item .carousel-img {
-    object-fit: cover;
-}
-.col-lg-6 img {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
-.carousel-item .carousel-caption {
-    width: 100%;
-    height: 100%;
+.carousel-item .carousel-img {
+    display: block;
+    width: 50vw;
+    object-fit: ;
 }
+.carousel-item .carousel-caption {
+
+    overflow: hidden;
+    border-left: 2px solid black;
+}
+.carousel-item .carousel-img img {
+    object-fit: ;
+    object-position: ;
+    overflow-x: hidden;
+}
+
 
 
 /* RESPONSIVIDADE */

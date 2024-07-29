@@ -411,29 +411,10 @@ header nav {
     border-radius: 12px;
 }
 
-/* CARROSEL */
-.container {
+/* CARDS */
+.cards {
+    display: ;
     background-color: red;
-}
-.carousel-item {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-.carousel-item .carousel-img {
-    display: block;
-    width: 50vw;
-    object-fit: ;
-}
-.carousel-item .carousel-caption {
-
-    overflow: hidden;
-    border-left: 2px solid black;
-}
-.carousel-item .carousel-img img {
-    object-fit: ;
-    object-position: ;
-    overflow-x: hidden;
 }
 
 

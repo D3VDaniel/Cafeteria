@@ -424,7 +424,7 @@ header nav {
     height: 60%;
     width: 30%;
     border-radius: 50px;
-    background: linear-gradient(135deg, #00ffd6, #08e260);
+    background: linear-gradient(135deg, #ffe5c4, #efd3b0, #d9a869);
     transition: 0.5s ease-in-out;
     transform-style: preserve-3d;
     box-shadow: #05471100 40px 50px 25px, #02140033 0px 25px 25px;
@@ -432,6 +432,8 @@ header nav {
 .glass {
     transform-style: preserve-3d;
     position: absolute;
+    height: 96%;
+    width: 96%;
     inset: 8px;
     background: linear-gradient(#ffffff59, #ffffffd0);
     border-radius: 55px;
@@ -439,7 +441,6 @@ header nav {
     border-left: 1px solid white;
     border-bottom: 1px solid white;
     transition: 0.5s ease-in-out;
-
     transform: translate3d(0, 0, 6px);
 }
 .cartao {
@@ -452,7 +453,7 @@ header nav {
     position: absolute;
     aspect-ratio: 1;
     border-radius: 50%;
-    background: #00f9cd33;
+    background: #ffe5c4;
     top: 0;
     right: 0;
     box-shadow: #64646f33 -10px 10px 20px;
@@ -499,13 +500,63 @@ header nav {
     align-items: center;
 }
 .conteudo {
-    padding: 130px 60px 0 30px;
+    padding: 100px 60px 0 30px;
 }
 .conteudo h1 {
     color: #46220f;
     font-weight: 900;
-    font-size: ;
+    font-size: 40px;
 }
+.conteudo p {
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.footer-cards {
+    transform-style: preserve-3d;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    text-decoration: none; 
+    font-size: 24px;
+    padding: 0 5px;
+}
+.footer-cards a {
+    text-decoration: none;
+    color: #46220f;
+    cursor: pointer;
+}
+.footer-cards .link-cards {
+    transition: 0.2s ease-in-out;
+    font-size: 20px;
+    cursor: pointer;
+}
+.footer-cards .link-cards:hover {
+    transform: translate3d(10px, 0, 10px);
+}
+.footer-cards .social {
+    transform-style: preserve-3d;
+    display: flex;
+    gap: 10px
+}
+.footer-cards .social .social-icons {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: #46220f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: #efd3b0 7px 7px 5px;
+    transition: 0.5s;
+}
+
 
 /* RESPONSIVIDADE */
 

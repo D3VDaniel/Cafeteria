@@ -20,6 +20,7 @@ body {
     --calculate: calc(3 / 2);
 }
 
+/* HEADER */
 header {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -29,18 +30,15 @@ header {
     border-bottom: 2px solid black;
     background-color: #fff;
 }
-
 header .logo img {
     width: ;
 }
-
 header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
 }
-
 header nav a {
     color: #000;
     font-weight: 400;
@@ -48,7 +46,6 @@ header nav a {
     font-size: 1.5em;
     padding: 10px;
 }
-
 header nav a:hover {
     color:#fff;
     cursor: pointer;
@@ -57,7 +54,6 @@ header nav a:hover {
     border-radius: 12px;
     transition: .5s;
 }
-
 header nav ul {
     height: 100%;
     display: flex;
@@ -66,25 +62,21 @@ header nav ul {
     gap: 30px;
     padding-right: 30px;
 }
-
 header nav {
     border-left: 1px solid var(--border-color);
 }
 
+/* CARROSEL */
 .carousel {
     margin-top: -80px;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
-
 .carousel .list {
     height: 100%;
     position: relative;
 }
-
-
-
 .carousel .list .item {
     display:block;
     position: absolute;
@@ -93,7 +85,6 @@ header nav {
     width: 100%;
     height: 100%;
 }
-
 .carousel .list .item .image {
     width: var(--w-image);
     height: 100%;
@@ -107,13 +98,11 @@ header nav {
     align-items: center;
     font-weight: 500;
 }
-
 .carousel .list .item .image img {
     width: 100%;
     margin-bottom: 20px;
     filter: drop-shadow(0 0 0.75rem black);
 }
-
 .carousel .list .item .image figcaption {
     font-family: "Edu AU VIC WA NT Hand", cursive;
     font-weight: bold;
@@ -122,7 +111,6 @@ header nav {
     margin-bottom: 30px;
     width: 70%;
 }
-
 .carousel .list .item .main-content {
     height: 100%;
     display: grid;
@@ -131,27 +119,22 @@ header nav {
 .carousel .list .item .main-content .content {
     padding: 150px 20px 20px 80px;
 }
-
 .image figcaption {
     color: #000;
 }
-
 .carousel .list .item .main-content .content h2 {
     font-size: 3.5em;
     font-family: "Edu AU VIC WA NT Hand", cursive;
 }
-
 .card {
     border-radius: 0;
     border: none;
 }
-
 .carousel .list .item .main-content .content .price {
     font-family: "Edu AU VIC WA NT Hand", cursive;
     font-size: 3em;
     margin: 20px 0;
 }
-
 .carousel .list .item .main-content .content .addToCard {
     background-color: transparent;
     color: #4f8b69;
@@ -164,13 +147,11 @@ header nav {
     margin-top: 20px;
     width: 30%;
 }
-
 .carousel .list .item .main-content .content .addToCard:hover {
     background-color: #254c36;
     color: #fff;
     transition: .5s;
 }
-
 .arrows {
     position: absolute;
     bottom: 20px;
@@ -181,7 +162,6 @@ header nav {
     justify-content: end;
     gap: 10px;
 }
-
 .arrows button {
     background-color: #46220f;
     border: 1px solid var(--border-color);
@@ -195,31 +175,25 @@ header nav {
     transition: 0.5s;
     border-radius: 50px;
 }
-
 .arrows button:hover {
     background-color: transparent;
     color: #46220f;
 }
-
 .carousel .list .item.active,
 .carousel .list .item.other_1,
 .carousel .list .image.other_2 {
     display: block;
 }
-
 .carousel .list .item.active {
     z-index: 2;
 }
-
 .carousel .list .item.item.other_1,
 .carousel .list .item.item.other_2 {
     pointer-events: none;
 }
-
 .carousel .list .item.active .main-content {
     animation: showContent 1.5s ease-in-out 1 forwards;
 }
-
 @keyframes showContent {
     from{
         clip-path: circle(0% at 70% 50%);
@@ -232,14 +206,12 @@ header nav {
 .next .item.other_1 {
     z-index: 1;
 }
-
 .next .item .image img {
     animation: effectNext 0.8s ease-in-out 1 forwards;
 }
 .next .item .image figcaption {
     animation: effectNext 0.5s ease-in-out 1 forwards;
 }
-
 @keyframes effectNext {
     from{
         transform: translateX(calc(var(--transform-from)));
@@ -247,22 +219,18 @@ header nav {
         transform: translateX(calc(var(--transform-from) - var(--w-image)));
     }
 }
-
 .next .list .item.active .image {
     --transform-from: var(--w-image);   
 }
-
 .next .list .item.other_1 .image {
     z-index: 3;
     --transform-from: 0px;
     overflow: hidden;
 }
-
 .next .list .item.other_2 .image {
     z-index: 3;
     --transform-from: calc(var(--w-image) * 2);
 }
-
 .arrows {
     z-index: 10;
 }
@@ -281,22 +249,18 @@ header nav {
         transform: translateX(calc(var(--transform-from) + var(--w-image)));
     }
 }
-
 .prev .item.other_2 {
     z-index: 1;
     opacity: 100;
 }
-
 .prev .list .item.active .image {
     --transform-from: calc(var(--w-image) * -1);
     overflow: hidden;
 }
-
 .prev .list .item.other_1 .image {
     --transform-from: 0px;
     z-index: 3;
 }
-
 .prev .list .item.other_2 .image {
     --transform-from: var(--w-image);
     z-index: 3;
@@ -414,6 +378,8 @@ header nav {
 /* CARDS */
 /* CARD 1 */
 .cards-end {
+    display: flex;
+    justify-content: space-between;
     width: 100vw;
     height: 100vh;
     perspective: 1000px;
@@ -453,7 +419,7 @@ header nav {
     position: absolute;
     aspect-ratio: 1;
     border-radius: 50%;
-    background: #ffe5c4;
+    background: linear-gradient( #ffe5c4);
     top: 0;
     right: 0;
     box-shadow: #64646f33 -10px 10px 20px;
@@ -462,39 +428,38 @@ header nav {
 }
 .cartao .circle1 {
     width: 170px;
-    transform: translate3d(0, 0, 2px);
-    top: 8px;
-    right: 8px;
+    transform: translate3d(0, 0, 20px);
+    top: 14px;
+    right: 12px;
     transition-delay: 0.0s;
 }
 .cartao .circle2 {
     width: 140px;
-    transform: translate3d(0, 0, 4px);
-    top: 10px;
-    right: 10px;
-    transition-delay: 0.4s;
+    transform: translate3d(0, 0, 40px);
+    top: 21px;
+    right: 9px;
+    transition-delay: 0.2s;
 }
 .cartao .circle3 {
     width: 110px;
-    transform: translate3d(0, 0, 6px);
-    top: 17px;
-    right: 17px;
-    transition-delay: 0.8s;
+    transform: translate3d(0, 0, 60px);
+    top: 26px;
+    right: 6px;
+    transition-delay: 0.4s;
 }
 .cartao .circle4 {
     width: 80px;
-    transform: translate3d(0, 0, 8px);
-    top: 23px;
-    right: 23px;
-    transition-delay: 1.2s;
+    transform: translate3d(0, 0, 80px);
+    top: 33px;
+    right: 3px;
+    transition-delay: 0.6s;
 }
 .cartao .circle5 {
     width: 50px;
-    transform: translate3d(0, 0, 10px);
-    top: 30px;
-    right: 30px;
-    transition-delay: 1.6s;
-
+    transform: translate3d(0, 0, 100px);
+    top: 40px;
+    right: 0px;
+    transition-delay: 0.8s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -556,7 +521,37 @@ header nav {
     box-shadow: #efd3b0 7px 7px 5px;
     transition: 0.5s;
 }
+.footer-cards .social .social-icons:nth-child(1) {
+    transition: 0.2s ease-in-out 0.2s;
+}
+.footer-cards .social .social-icons:nth-child(2) {
+    transition: 0.2s ease-in-out 0.4s;
+}
+.footer-cards .social .social-icons:nth-child(3) {
+    transition: 0.2s ease-in-out 0.6s;
+}
 
+/* CARD HOVER EFFECT */
+.cards-end .card:hover {
+    transform: rotate3d(1, 10, -1, 30deg);
+    box-shadow: #05471100 40px 50px 25px, #02140033 -25px 0px 40px;
+}
+.cards-end .card:hover .social-icons {
+    transform: translate3d(0, 0, 50px);
+    box-shadow: #efd3b0 -7px -7px 5px;
+}
+.cards-end .card:hover .cartao .circle2 {
+    transform: translate3d(0, 0, 60px);
+}
+.cards-end .card:hover .cartao .circle3 {
+    transform: translate3d(0, 0, 80px);
+}
+.cards-end .card:hover .cartao .circle4 {
+    transform: translate3d(0, 0, 100px);
+}
+.cards-end .card:hover .cartao .circle5 {
+    transform: translate3d(0, 0, 120px);
+}
 
 /* RESPONSIVIDADE */
 

@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria</title>
+    <title> 20 2
+        Ni 122) MZ
+        BORCELLE Cafeteria</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
@@ -14,243 +16,238 @@
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
-
-    <header class="cabecalho sticky-top">
+    <header class="cabecalho sticky-top" id="cabecalho">
         <figure class="logo">
-            <img src="https://placehold.co/50x50" alt="">
+            <img src="./img-logo/logo-cafeteria.png" alt="">
         </figure>
         <nav class="main-nav" id="menu-navegacao">
             <ul class="nav nav-pills d-md-flex">
-                <li><a href=""><i class="bi bi-cup-hot pe-2"></i> Café</a></li>
-                <li><a href=""><i class="bi bi-card-text pe-2"></i> Menu</a></li>
+                <li><a href="#topo"><i class="bi bi-cup-hot pe-2"></i> Café</a></li>
+                <li><a href="#menu"><i class="bi bi-card-text pe-2"></i> Menu</a></li>
                 <li><a href="#sobre-nos"><i class="bi bi-people pe-2"></i> Sobre Nós</a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section class="carousel next">
-            <div class="list">
-                <article class="item other_1">
-                    <div class="main-content"
-                        style="background-image: linear-gradient(to left top, #382020, #46220F, #5f3806, #704214);">
-                        <div class="content card">
-                            <h2>Café Latte, o mais pedido!</h2>
-                            <p class="price">R$ 10,00</p>
-                            <p class="description fw-bold">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et, deleniti eius
-                                aperiam natus rem facilis aliquam quasi impedit excepturi non, animi
-                            </p>
-                            <button class="addToCard">
-                                Add Carrinho
-                                <i class="bi bi-bag-check-fill"></i>
-                            </button>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <main id="topo">
+            <section class="carousel next">
+                <div class="list">
+                    <article class="item other_1">
+                        <div class="main-content"
+                            style="background-image: linear-gradient(to left top, #382020, #46220F, #5f3806, #704214);">
+                            <div class="content card">
+                                <h2>Café Latte, o mais pedido!</h2>
+                                <p class="price">R$ 10,00</p>
+                                <p class="description fw-bold">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et, deleniti eius
+                                    aperiam natus rem facilis aliquam quasi impedit excepturi non, animi
+                                </p>
+                                <button class="addToCard">
+                                    Add Carrinho
+                                    <i class="bi bi-bag-check-fill"></i>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <figure class="image">
-                        <img src="./images/caffe-latte.png" alt="Café Latte">
-                        <figcaption>Café Latte, o mais pedido!</figcaption>
-                    </figure>
-                </article>
-                <article class="item active">
-                    <div class="main-content"
-                        style="background-image: linear-gradient(to left top, #ffe5c4, #efd3b0, #d9a869, #c38d47, #7e4c0a);">
-                        <div class="content card">
-                            <h2>Frappuccino de caramelo, com ainda mais Carameeelo</h2>
-                            <p class="price">R$ 14,00</p>
-                            <p class="description fw-bold">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et, deleniti eius
-                                aperiam natus rem facilis aliquam quasi impedit excepturi non, animi
-                            </p>
-                            <button class="addToCard">
-                                Add Carrinho
-                                <i class="bi bi-bag-check-fill"></i>
-                            </button>
+                        <figure class="image">
+                            <img src="./images/caffe-latte.png" alt="Café Latte">
+                            <figcaption>Café Latte, o mais pedido!</figcaption>
+                        </figure>
+                    </article>
+                    <article class="item active">
+                        <div class="main-content"
+                            style="background-image: linear-gradient(to left top, #ffe5c4, #efd3b0, #d9a869, #c38d47, #7e4c0a);">
+                            <div class="content card">
+                                <h2>Frappuccino de caramelo, com ainda mais Carameeelo</h2>
+                                <p class="price">R$ 14,00</p>
+                                <p class="description fw-bold">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et, deleniti eius
+                                    aperiam natus rem facilis aliquam quasi impedit excepturi non, animi
+                                </p>
+                                <button class="addToCard">
+                                    Add Carrinho
+                                    <i class="bi bi-bag-check-fill"></i>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <figure class="image">
-                        <img src="./images/caramel-frappuccino.png" alt="Café Latte">
-                        <figcaption>Frappuccino de caramelo, com ainda mais Carameeelo</figcaption>
-                    </figure>
-                </article>
-                <article class="item other_2">
-                    <div class="main-content"
-                        style="background-image: linear-gradient(to left top, #FFE3FC, #FFFBDE, #FFCCBD, #FFB28F, #FFADBB);">
-                        <div class="content card">
-                            <h2>Cookies and Cream, o queridinho!</h2>
-                            <p class="price">R$ 17,00</p>
-                            <p class="description fw-bold">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et, deleniti eius
-                                aperiam natus rem facilis aliquam quasi impedit excepturi non, animi
-                            </p>
-                            <button class="addToCard">
-                                Add Carrinho
-                                <i class="bi bi-bag-check-fill"></i>
-                            </button>
+                        <figure class="image">
+                            <img src="./images/caramel-frappuccino.png" alt="Café Latte">
+                            <figcaption>Frappuccino de caramelo, com ainda mais Carameeelo</figcaption>
+                        </figure>
+                    </article>
+                    <article class="item other_2">
+                        <div class="main-content"
+                            style="background-image: linear-gradient(to left top, #FFE3FC, #FFFBDE, #FFCCBD, #FFB28F, #FFADBB);">
+                            <div class="content card">
+                                <h2>Cookies and Cream, o queridinho!</h2>
+                                <p class="price">R$ 17,00</p>
+                                <p class="description fw-bold">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et, deleniti eius
+                                    aperiam natus rem facilis aliquam quasi impedit excepturi non, animi
+                                </p>
+                                <button class="addToCard">
+                                    Add Carrinho
+                                    <i class="bi bi-bag-check-fill"></i>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <figure class="image">
-                        <img src="./images/cookies-n-creme-frappuccino.png" alt="Café Latte">
-                        <figcaption>Cookies and Cream, o queridinho!</figcaption>
-                    </figure>
-                </article>
-                <article class="item">
-                    <div class="main-content"
-                        style="background-image: linear-gradient(to left top, #f5e1ce, #e8c38e, #ffb48a, #c57d56, #8d4925);">
-                        <div class="content card">
-                            <h2>Dolce Frap, um novo produto</h2>
-                            <p class="price">R$ 13,00</p>
-                            <p class="description fw-bold">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et, deleniti eius
-                                aperiam natus rem facilis aliquam quasi impedit excepturi non, animi
-                            </p>
-                            <button class="addToCard">
-                                Add Carrinho
-                                <i class="bi bi-bag-check-fill"></i>
-                            </button>
+                        <figure class="image">
+                            <img src="./images/cookies-n-creme-frappuccino.png" alt="Café Latte">
+                            <figcaption>Cookies and Cream, o queridinho!</figcaption>
+                        </figure>
+                    </article>
+                    <article class="item">
+                        <div class="main-content"
+                            style="background-image: linear-gradient(to left top, #f5e1ce, #e8c38e, #ffb48a, #c57d56, #8d4925);">
+                            <div class="content card">
+                                <h2>Dolce Frap, um novo produto</h2>
+                                <p class="price">R$ 13,00</p>
+                                <p class="description fw-bold">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et, deleniti eius
+                                    aperiam natus rem facilis aliquam quasi impedit excepturi non, animi
+                                </p>
+                                <button class="addToCard">
+                                    Add Carrinho
+                                    <i class="bi bi-bag-check-fill"></i>
+                                </button>
+                            </div>
                         </div>
+                        <figure class="image">
+                            <img src="./images/cinnamon-dolce-frap.png" alt="Café Latte">
+                            <figcaption>Dolce Frap, um novo produto</figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="arrows">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+            </section>
+        </main>
+        <section class="onwhite pt-5 pb-5" id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="coluna1 col-lg-6 col-md-6">
+                        <img src="./img mid/iced-caramel-latte-with-whipped-cream-sweet-treat_157027-4684.avif"
+                            class="d-block w-100" alt="Foto do espaço interno do restaurante">
                     </div>
-                    <figure class="image">
-                        <img src="./images/cinnamon-dolce-frap.png" alt="Café Latte">
-                        <figcaption>Dolce Frap, um novo produto</figcaption>
-                    </figure>
-                </article>
-            </div>
-            <div class="arrows">
-                <button id="prev"><</button>
-                <button id="next">></button>
+                    <div class="coluna2 col-md-5 mt-3 mt-md-0">
+                        <h2 class="section-title">Frappuccino Creme de <span class="text-colored">Caramelo</span></h2>
+                        <p>
+                            O xarope de caramelo amanteigado é misturado com leite e gelo e, em seguida, coberto com uma
+                            camada de molho de caramelo escuro, chantilly e garoa de caramelo.
+                        </p>
+                        <h3 class="section-title"><span class="text-colored">Tamanhos</span></h3>
+                        <ul>
+                            <li class="card">
+                                <img src="./img cup-size/large-coffee.png"><br>Pequeno<br>(250mL)
+                            </li>
+                            <li class="card">
+                                <img src="./img cup-size/large-coffee.png"><br>Médio<br>(500mL)
+                            </li>
+                            <li class="card">
+                                <img src="./img cup-size/large-coffee.png"><br>Grande<br>(700mL)
+                            </li>
+                        </ul>
+                        <button type="button" class="saiba-mais btn">Add Carrinho
+                            <i class="bi bi-bag-check-fill"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
-    <section class="onwhite pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="coluna1 col-lg-6 col-md-6">
-                    <img src="./img mid/iced-caramel-latte-with-whipped-cream-sweet-treat_157027-4684.avif"
-                        class="d-block w-100" alt="Foto do espaço interno do restaurante">
+        <div class="container cards-end" id="sobre-nos">
+            <div class="card card1 mt-3 mt-md-0">
+                <div class="cartao">
+                    <span class="circle circle1"></span>
+                    <span class="circle circle2"></span>
+                    <span class="circle circle3"></span>
+                    <span class="circle circle4"></span>
+                    <span class="circle circle5"></span>
                 </div>
-                <div class="coluna2 col-md-5 mt-3 mt-md-0">
-                    <h2 class="section-title">Frappuccino Creme de <span class="text-colored">Caramelo</span></h2>
+                <div class="glass">
+                    <div class="conteudo">
+                        <h1>Trabalhe Conosco</h1>
+                        <p>Novas vagas surgindo em uma loja perto de você.</p>
+                    </div>
+                    <div class="footer-cards">
+                        <div class="social">
+                            <span class="social-icons">
+                                <a href="#"></a>
+                                <i class="bi bi-facebook"></i>
+                            </span>
+                            <span class="social-icons">
+                                <a href="#"></a>
+                                <i class="bi bi-instagram"></i>
+                            </span>
+                            <span class="social-icons">
+                                <a href="#"></a>
+                                <i class="bi bi-twitter"></i>
+                            </span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="card card2 mt-3 mt-md-0">
+                <div class="cartao">
+                    <span class="circle circle1"></span>
+                    <span class="circle circle2"></span>
+                    <span class="circle circle3"></span>
+                    <span class="circle circle4"></span>
+                    <span class="circle circle5"></span>
+                </div>
+                <div class="glass">
+                    <div class="conteudo">
+                        <h1>Encontre a Loja mais Próxima</h1>
+                        <p>Entre, será um prazer te atender!</p>
+                    </div>
+                    <div class="footer-cards">
+                        <div class="link-cards">
+                            <button class="btn" a href="#">Encontre sua Loja<i class="fa-solid fa-store"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card3 mt-3 mt-md-0">
+                <div class="cartao">
+                    <span class="circle circle1"></span>
+                    <span class="circle circle2"></span>
+                    <span class="circle circle3"></span>
+                    <span class="circle circle4"></span>
+                    <span class="circle circle5"></span>
+                </div>
+                <div class="glass">
+                    <div class="conteudo">
+                        <h1>Sustentabilidade</h1>
+                        <p>Saiba mais sobre as nossas metas de Sustentabilidade.</p>
+                    </div>
+                    <div class="footer-cards">
+                        <div class="link-cards">
+                            <button class="btn" a href="#">Saiba Mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="bottom">
+                <div class="copy">
                     <p>
-                        O xarope de caramelo amanteigado é misturado com leite e gelo e, em seguida, coberto com uma
-                        camada de molho de caramelo escuro, chantilly e garoa de caramelo.
+                        Copyright &copy; 2024. Desenvolvido por <a href="https://github.com/D3VDaniel"> Daniel Araújo</a> - Todos os Direitos Reservados
                     </p>
-                    <h3 class="section-title"><span class="text-colored">Tamanhos</span></h3>
-                    <ul>
-                        <li class="card">
-                            <img src="./img cup-size/large-coffee.png"><br>Pequeno<br>(250mL)
-                        </li>
-                        <li class="card">
-                            <img src="./img cup-size/large-coffee.png"><br>Médio<br>(500mL)
-                        </li>
-                        <li class="card">
-                            <img src="./img cup-size/large-coffee.png"><br>Grande<br>(700mL)
-                        </li>
-                    </ul>
-                    <button type="button" class="saiba-mais btn">Add Carrinho
-                        <i class="bi bi-bag-check-fill"></i>
-                    </button>
+                </div>
+                <div class="termos-de-uso">
+                    <p>
+                        <a href="">Política de Privacidade</a>
+                    </p>
+                    <p>
+                        <a href="">Termos de uso</a>
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
-    <div class="container cards-end" id="sobre-nos">
-        <div class="card card1 mt-3 mt-md-0">
-            <div class="cartao">
-                <span class="circle circle1"></span>
-                <span class="circle circle2"></span>
-                <span class="circle circle3"></span>
-                <span class="circle circle4"></span>
-                <span class="circle circle5"></span>
-            </div>
-            <div class="glass">
-                <div class="conteudo">
-                    <h1>Trabalhe Conosco</h1>
-                    <p>Novas vagas surgindo em uma loja perto de você.</p>
-                </div>
-                <div class="footer-cards">
-                    <div class="social">
-                        <span class="social-icons">
-                            <a href="#"></a>
-                            <i class="bi bi-facebook"></i>
-                        </span>
-                        <span class="social-icons">
-                            <a href="#"></a>
-                            <i class="bi bi-instagram"></i>
-                        </span>
-                        <span class="social-icons">
-                            <a href="#"></a>
-                            <i class="bi bi-twitter"></i>
-                        </span>
-                    </div>  
-                </div>
-            </div>
-        </div>
-        <div class="card card2 mt-3 mt-md-0">
-            <div class="cartao">
-                <span class="circle circle1"></span>
-                <span class="circle circle2"></span>
-                <span class="circle circle3"></span>
-                <span class="circle circle4"></span>
-                <span class="circle circle5"></span>
-            </div>
-            <div class="glass">
-                <div class="conteudo">
-                    <h1>Encontre a Loja mais Próxima</h1>
-                    <p>Entre, será um prazer te atender!</p>
-                </div>
-                <div class="footer-cards">
-                    <div class="link-cards">
-                        <button class="btn" a href="#">Encontre sua Loja<i class="fa-solid fa-store"></i></a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card card3 mt-3 mt-md-0">
-            <div class="cartao">
-                <span class="circle circle1"></span>
-                <span class="circle circle2"></span>
-                <span class="circle circle3"></span>
-                <span class="circle circle4"></span>
-                <span class="circle circle5"></span>
-            </div>
-            <div class="glass">
-                <div class="conteudo">
-                    <h1>Sustentabilidade</h1>
-                    <p>Saiba mais sobre as nossas metas de Sustentabilidade.</p>
-                </div>
-                <div class="footer-cards">
-                    <div class="link-cards">
-                        <button class="btn" a href="#">Saiba Mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </footer>
     </div>
-    <footer>
-        <div class="bottom">
-            <div class="copy">
-                <p>
-                    Copyright &copy; 2024. Desenvolvido por <a href="https://github.com/D3VDaniel"> Daniel Araújo</a> - Todos os Direitos Reservados
-                </p>
-            </div>
-            <div class="termos-de-uso">
-                <p>
-                    <a href="">Política de Privacidade</a>
-                </p>
-                <p>
-                    <a href="">Termos de uso</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-
-
     <script src="./bootstrap.bundle.min.js"></script>
     <script src="./app.js"></script>
 </body>
-
 </html>

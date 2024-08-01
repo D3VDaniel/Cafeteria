@@ -52,3 +52,17 @@ const changeSlider = () => {
 let autoPlay = setInterval(() => {
     next.click();
 }, 55000);
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM completamente carregado e analisado');
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        card.addEventListener('click', function() {
+            console.log('Card clicado:', this.innerHTML);
+            cards.forEach(c => c.classList.remove('selected'));
+            this.classList.add('selected');
+            console.log('Classe selecionada adicionada ao card:', this.innerHTML);
+        });
+    });
+});

@@ -31,7 +31,8 @@ header {
     background-color: #fff;
 }
 header .logo img {
-    width: ;
+    width: 80px;
+    height: 80px;
 }
 header .logo {
     display: flex;
@@ -135,8 +136,11 @@ header nav {
     border-radius: 0;
     border: none;
 }
-.card.selected {
-    border: 2px solid #4f8b69; /* Verde para indicar seleção */
+.onwhite .card.selected {
+    background-color: #4f8b69;
+    color: #fff;
+    transition: .5s;
+    border-radius: 12px;
 }
 .carousel .list .item .main-content .content .price {
     font-family: "Edu AU VIC WA NT Hand", cursive;

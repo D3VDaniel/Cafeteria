@@ -47,11 +47,11 @@ const changeSlider = () => {
     clearInterval(autoPlay);
     autoPlay = setInterval(() => {
         next.click();
-    }, 55000);
+    }, 5000);
 }
 let autoPlay = setInterval(() => {
     next.click();
-}, 55000);
+}, 5000);
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM completamente carregado e analisado');

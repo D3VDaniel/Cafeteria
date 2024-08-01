@@ -39,20 +39,24 @@ header .logo {
     align-items: center;
     margin: 0;
 }
+header nav li {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 header nav a {
     color: #000;
     font-weight: 400;
     text-decoration: none;
     font-size: 1.5em;
-    padding: 10px;
 }
-header nav a:hover {
-    color:#fff;
+header nav li:hover {
+    color: #46220f;
     cursor: pointer;
-    font-size: 1.6em;
-    background-color: #46220f;
-    border-radius: 12px;
-    transition: .5s;
+    font-size: 1.1em;
+    border-bottom: 5px solid #46220f;
+    transition: .3s ease-in-out 
 }
 header nav ul {
     height: 100%;
@@ -72,6 +76,7 @@ header nav {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    border-bottom: 2px solid black;
 }
 .carousel .list {
     height: 100%;
@@ -130,6 +135,9 @@ header nav {
     border-radius: 0;
     border: none;
 }
+.card.selected {
+    border: 2px solid #4f8b69; /* Verde para indicar seleção */
+}
 .carousel .list .item .main-content .content .price {
     font-family: "Edu AU VIC WA NT Hand", cursive;
     font-size: 3em;
@@ -138,14 +146,14 @@ header nav {
 .carousel .list .item .main-content .content .addToCard {
     background-color: transparent;
     color: #4f8b69;
-    padding: 10px 30px;
+    padding: 10px 10px;
     font-family: Poppins;
     font-size: large;
     font-weight: 500;
     border-radius: 30px;
     border: 1px solid #4f8b69;
     margin-top: 20px;
-    width: 30%;
+    width: 30%;  
 }
 .carousel .list .item .main-content .content .addToCard:hover {
     background-color: #254c36;
@@ -460,14 +468,6 @@ header nav {
     color: #46220f;
     cursor: pointer;
 }
-.card1 .footer-cards .link-cards {
-    transition: 0.2s ease-in-out;
-    font-size: 20px;
-    cursor: pointer;
-}
-.card1 .glass .footer-cards .link-cards:hover {
-    transform: translate3d(10px, 0, 10px);
-}
 .card1 .footer-cards .social {
     transform-style: preserve-3d;
     display: flex;
@@ -477,8 +477,9 @@ header nav {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: white;
+    background-color: transparent;
     color: #46220f;
+    border: 1px solid #46220f;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -486,6 +487,16 @@ header nav {
     cursor: pointer;
     box-shadow: #efd3b0 7px 7px 5px;
     transition: 0.5s;
+}
+.card1 .footer-cards .social .social-icons:hover{
+    background-color: #46220f;
+    color: white;
+}
+.card1 .footer-cards .social .social-icons i {
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .card1 .footer-cards .social .social-icons:nth-child(1) {
     transition: 0.2s ease-in-out 0.2s;
@@ -863,6 +874,46 @@ header nav {
     transform: translate3d(0, 0, 20px);
     box-shadow: #efd3b0 -7px -7px 5px;
 }
+
+/* FOOTER */
+footer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    background-image: transparent;
+    color: black;
+    text-decoration: none;
+    border-top: 2px solid black;
+}
+footer .bottom {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    font-size: 14px;
+    justify-content: space-between;
+}
+footer .termos-de-uso {
+    display: flex;
+}
+footer .termos-de-uso p {
+    padding: 0 5px;
+}
+footer .bottom p {
+    margin-bottom: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer .bottom p a {
+    text-decoration: none;
+    color: #46220f;
+}
+
+
 
 /* RESPONSIVIDADE */
 
